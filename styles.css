@@ -378,7 +378,7 @@ margin-bottom: 5px;
 }
   
 /* -------- css for responsive ------  */
-@media (min-width:480px) and (max-width:600px){
+@media (min-width:350px) and (max-width:600px){
     #header{
         background-image: url(images/bgpic1.png);
     }
