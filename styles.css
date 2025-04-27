@@ -383,7 +383,7 @@ margin-bottom: 5px;
         background-image: url(images/bgpic1.png);
     }
     .header-text{
-        margin-top: 45%;
+        margin-top: 55%;
         font-size: 19px;
         font-weight: 500;
     }
@@ -395,7 +395,7 @@ margin-bottom: 5px;
         display: block;
     }
     #about{
-        padding: 27px 20px;
+        padding: 27px 0;
     }
     .about-col-1{
         display: none;
@@ -458,5 +458,8 @@ margin-bottom: 5px;
     }
     #achieve .container .sub-title{
         margin-bottom: 40px;
+    }
+    #achieve .container .h1{
+        font-size: 20px;
     }
 }
