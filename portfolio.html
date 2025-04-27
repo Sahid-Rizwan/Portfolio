@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1271c77683.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logomain.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#achieve" onclick="closemenu()">Achievements</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" id="menu-icon" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span class="name">Sahid <span class="surname">Rizwan</span></span></h1>
+            </div>
+        </div>
+    </div>
+<!-- --------- about ------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="sub-content">I'm fresher and having knowledge on developing 
+                        websites or web applications. 
+                        I'll give my fullest efforts, skills and 
+                        knowledge to provide a good result to the given 
+                        work. Learning more and hands-on practice is 
+                        my way of developing myself.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS, JavaScript</span><br>FrontEnd Development</li>
+                            <li><span>Python, Java(intermidate)</span><br>Programming Language</li>
+                            <li><span>Flask(basics)</span><br>Backend Framework</li>
+                            <li><span>SQL</span><br>Database</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <div class="edu_details">
+                            <ul>
+                                <li><span>2021 - 2025</span><br><p class="qulaification">B.Tech Information Technology</p><br>A.V.C. College of Engineering, Mayiladuthurai</li>
+                                <li><span>2020 - 2021</span><br><p class="qulaification">Grade 12</p><br>Silver Jubilee Matric.Hr.Sec.School, Mayiladuthurai</li>
+                                <li><span>2018 - 2019</span><br><p class="qulaification">Grade 10</p><br>Silver Jubilee Matric.Hr.Sec.School, Mayiladuthurai</li>
+                            </ul>
+                            <div class="edu_percentage">
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percent">82%</div>
+                                    <!-- <div class="text">UG</div> -->
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percent">93%</div>
+                                    <!-- <div class="text">HSC</div> -->
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percent">91%</div>
+                                    <!-- <div class="text">SSLC</div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------- Projects --------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h2>High Tech Blind Foldable Cane</h2>
+                    <h3>Patent Project</h3>
+                    <p>
+                        An assistive device designed for visually impaired individuals, 
+                        the High Tech Blind Foldable Cane incorporates advanced sensors 
+                        to detect obstacles and environmental hazards. The foldable design
+                         ensures portability and ease of use, while built-in 
+                         alerts guide the user safely through unfamiliar terrain.
+                    </p>
+                    <!-- <button class="btn"><a href="#">View</a></button> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Leave Management System</h2>
+                    <h3>Mini Project</h3>
+                    <p>
+                        A web-based application that simplifies the process of 
+                        managing employee leave requests. The system offers 
+                        separate dashboards for employees, managers, and 
+                        administrators to apply, approve, and track leaves efficiently.
+                    </p>
+                    <!-- <button class="btn"><a href="#">Visit</a></button> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!------------ Achievements -----------  -->
+<div id="achieve">
+    <div class="container">
+        <h1 class="sub-title">Achievements</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <p>Certified in Python Course (Basics to Intermediate)</p>
+            </div>
+            <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <p>Attended a workshop on the topic of System Design in NIT</p>
+            </div>
+            <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <p>Certified in web development - intern of 1 month</p>
+            </div>
+            <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <p>Got certified with Microsoft Office by Microsoft</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle-dot"></div>
+                <p>Participated in ICIRET-2025</p>
+            </div>
+        </div>
+</div>
+
+<!-- ----------- contact me -----------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="mail"><i class="fa-solid fa-envelope"></i><a href="mailto:sahidrizwan2004@gmail.com" target="_blank">sahidrizwan2004@gmail.com</a></p>
+                    <p class="phone"><i class="fa-solid fa-phone"></i><a href="https://wa.me/+919894296715" target="_blank">+91 9894296715</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_.sahid_riz._/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sahid-rizwan24" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/SahidRizwanM_Resume.pdf" download class="btn2 btn3">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="2c078c46-2009-4d0e-959b-7274dec37177">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>| Sahid Rizwan M | Fresher | B.Tech | Open to Work |</p>
+        </div>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
