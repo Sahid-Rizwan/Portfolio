@@ -378,7 +378,7 @@ margin-bottom: 5px;
 }
   
 /* -------- css for responsive ------  */
-@media only screen and (max-width:650px){
+@media only screen and (max-width:600px){
     #header{
         background-image: url(images/bgpic1.png);
     }
